@@ -1,19 +1,33 @@
 {
-  "name": "votes",
+  "name": "voting-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cpbuckingham/vote_app.git"
+    "url": "https://github.com/cpbuckingham/vote_app.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cpbuckingham/vote_app/issues"
+  "scripts": {
+    "start": "node server.js"
   },
-  "homepage": "https://github.com/cpbuckingham/vote_app#readme"
+  "author": "cpbuckingham",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.2",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "ejs": "^2.5.2",
+    "express": "^4.12.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.14.1",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.4",
+    "sequelize": "^3.24.5",
+    "sequelize-cli": "^2.4.0",
+    "serve-favicon": "^2.3.0",
+    "sqlite3": "^3.1.7"
+  }
 }
