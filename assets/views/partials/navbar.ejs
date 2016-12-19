@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Voting App</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/" class="active">Home</a>
+        </li>
+        <% if (user) {%>
+          <li>
+            <a href="/auth/signout"><%= user %> (logout)</a>
+          </li>
+        <% } else { %>
+          <li>
+            <form action="/auth/twitter" method="get" style="display: inline">
+              <button class="btn btn-primary navbar-btn" type="submit">
+                Sign in with Twitter
+              </button>
+            </form>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+  </nav>
+</header>
